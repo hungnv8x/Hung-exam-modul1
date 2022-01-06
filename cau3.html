@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function isFibonacci(n) {
+        let a = 0;
+        let b = 1;
+        let arr = [];
+        for (let i = 0; ; i++) {
+            let tempt = a + b;
+            a = b;
+            b = tempt;
+            arr.push(a)
+            if (b > n) {
+                break;
+            }
+        }
+        if (arr.indexOf(n)>=0){
+            return true;
+        }
+        return false;
+    }
+
+    document.write(isFibonacci(8))
+</script>
+</body>
+</html>

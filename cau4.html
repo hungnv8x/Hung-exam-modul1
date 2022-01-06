@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="circle.js"></script>
+</head>
+<body>
+<canvas id="myCanvas" width="600px" height="600" style="border: 1px solid crimson"></canvas>
+<script>
+let canvas = document.getElementById('myCanvas');
+let circle = new Circle(10,10,100,'#000000')
+circle.render(canvas);
+</script>
+</body>
+</html>
